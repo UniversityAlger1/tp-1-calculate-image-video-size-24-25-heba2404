@@ -1,3 +1,5 @@
+
+
 #include "config/grayScaleImage.h"
 // Parameters:
 //   w: width of the image
@@ -6,7 +8,7 @@
 //   grayScale size of the image Bitmap (in byte)
 float grayScaleImage(int w, int h) {
    // YOUR CODE HERE - BEGIN
-
+    int size=(w*h*7)/8;
    // YOUR CODE HERE - END
-   return 0;
+   return size;
 }

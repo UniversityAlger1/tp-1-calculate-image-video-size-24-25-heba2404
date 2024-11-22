@@ -11,6 +11,17 @@
 float video(int w, int h, int durationMovie, int durationCredits, int fps, char* unit) {
    // YOUR CODE HERE - BEGIN
 
+      int size = (w * h * 3 * durationMovie * fps)+(w * h * durationCredits);
+      if(strcmp(unit, "ko") == 0){
+                                 size=size/1024;
+                                 }
+      if(strcmp(unit, "mo") == 0){ 
+                                  size=size/(1024*1024);
+                                  }
+      if(strcmp(unit, "go") == 0){ 
+                                  size=size/(1024*1024*1024);
+                                  }
+
    // YOUR CODE HERE - END
-   return 0;
+   return size;
 }
